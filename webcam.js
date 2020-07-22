@@ -832,7 +832,7 @@ var Webcam = {
 
 				var camera_settings = this.stream.getVideoTracks()[0].getSettings();
 
-				let aspect_ratio = camera_settings.width/camera_settings.height;
+				var aspect_ratio = camera_settings.width/camera_settings.height;
 
 				if (params.variable_dest_width) {
 					canvas.width = canvas.height*aspect_ratio;
